@@ -1,0 +1,3 @@
+Powerpoint, Word, Excell Görev çubuğuna eklencek.
+
+Klasör görünümlerinden son kullanılanlar kapatılacka ve arama geçmişi silincek
