@@ -29,7 +29,7 @@ Write-Host "Office Kurulumu tamamlandi ve ODT klasoru silindi!"
 $currentPolicy = Get-ExecutionPolicy
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "ShowTaskViewButton" -Value 0
-Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search" -Name "SearchboxTaskbarMode" -Value 1
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search" -Name "SearchboxTaskbarMode" -Value 0
 Stop-Process -Name "explorer" -Force
 Start-Process "explorer"
 Start-Sleep -Seconds 3
@@ -48,5 +48,5 @@ Write-Host "Ayarlar uygulandi ve Dosya Gezgini gecmisi temizlendi."
 
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy $currentPolicy -Force
 Write-Host "Tum kurulumlar tamamlandi ve Chrome varsayilan tarayici olarak ayarlandi!"
-
+Write-Host "3 ofis programini gorev cubuguna sabitlemeleyi unutma!"
 Pause
